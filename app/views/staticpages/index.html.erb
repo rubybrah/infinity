@@ -1,4 +1,4 @@
 <h3>Index from staticpages</h3>
 <% @users.each do |user| %>
-  <p>User: <%= user.name %> </p>
+  <p>User: <%=link_to user.name, user %></p>
 <% end %>

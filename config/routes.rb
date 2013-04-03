@@ -1,5 +1,5 @@
 Infinity::Application.routes.draw do
-  
+
   authenticated :user do
     root :to => 'staticpages#index'
   end
@@ -7,5 +7,6 @@ Infinity::Application.routes.draw do
   root :to => "staticpages#index"
   
   devise_for :users
+  resources :users
   
 end
